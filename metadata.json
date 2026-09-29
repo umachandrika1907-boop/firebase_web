@@ -1,0 +1,6 @@
+{
+  "name": "Firebase Auth Portal",
+  "description": "A secure and modern authentication web application with Firebase registration, sign-in, password reset, and profile management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

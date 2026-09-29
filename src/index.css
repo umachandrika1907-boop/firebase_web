@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0C0C0E;
+  --ink: #FFFFFF;
+  --accent: #A78BFA;
+  --accent-muted: rgba(167, 139, 250, 0.15);
+  --panel: #141417;
+  --border: #27272A;
+  --border-light: #3F3F46;
+  --ink-muted: #71717A;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  code, pre, .font-mono, .label {
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+.label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-muted);
+  display: block;
+}
+
+.divider {
+  height: 4px;
+  width: 40px;
+  background: var(--accent);
+}
+
+.btn-signout {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.875rem 2.5rem;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-signout:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.btn-primary-obsidian {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-obsidian:hover:not(:disabled) {
+  background: #C4B5FD;
+  border-color: #C4B5FD;
+}
+
+.btn-outline-obsidian {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-obsidian:hover {
+  border-color: var(--border-light);
+  background: #1A1A1E;
+}
+
